@@ -33,13 +33,13 @@ export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({ childr
           setConnected(true);
           toast({
             title: "Wallet Connected",
-            description: "Successfully connected to Phantom wallet",
+            description: "Successfully connected to  wallet",
           });
         }
       } else {
         toast({
-          title: "Phantom Wallet Not Found",
-          description: "Please install Phantom wallet extension",
+          title: " Wallet Not Found",
+          description: "Please install wallet extension",
           variant: "destructive",
         });
       }
