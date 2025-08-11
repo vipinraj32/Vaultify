@@ -319,8 +319,8 @@ const UserPanel = () => {
                         : 'bg-red-100 text-red-800'
                     }`}>
                       {eligibilityStatus === 'eligible' 
-                        ? '✅ You are eligible for this position!' 
-                        : '❌ You do not meet the requirements for this position.'}
+                        ? 'You are eligible for this position!' 
+                        : 'You do not meet the requirements for this position.'}
                     </div>
                   )}
                 </div>
