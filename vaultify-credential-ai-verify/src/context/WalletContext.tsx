@@ -38,7 +38,7 @@ export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         }
       } else {
         toast({
-          title: " Wallet Not Found",
+          title: " Wallet Not Found! download the wallet",
           description: "Please install wallet extension",
           variant: "destructive",
         });
@@ -63,7 +63,6 @@ export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   };
 
   useEffect(() => {
-    // Check if wallet is already connected
     if ('solana' in window) {
       const solana = (window as any).solana;
       if (solana.isPhantom && solana.isConnected) {
