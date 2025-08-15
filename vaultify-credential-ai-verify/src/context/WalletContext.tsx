@@ -39,7 +39,7 @@ export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       } else {
         toast({
           title: " Wallet Not Found! download the wallet",
-          description: "Please Install The wallet",
+          description: "",
           variant: "destructive",
         });
       }
